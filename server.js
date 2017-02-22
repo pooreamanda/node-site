@@ -2,6 +2,7 @@
 var express = require('express');
 var expressLayouts = require('express-ejs-layouts')
 var app = express();
+var nodemailer = require('nodemailer');
 var port = 8080;
 
 // use ejs and expess layouts
