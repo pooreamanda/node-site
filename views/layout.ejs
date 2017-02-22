@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Amanda Grace Hua</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<header>
+	<nav class="navbar navbar-inverse">
+		<a href="/" class="navbar-brand">Home</a>
+		<ul class="nav navbar-nav">
+			<li><a href="/about">Resume</a></li>
+			<li><a href="/contact">Contact</a></li>
+		</ul>
+	</nav>
+</header>
+
+  <!-- MAIN CONTENT HERE -->
+  <%- defineContent('hero') %>
+
+  	<main>
+		<div class="container">
+			<%- body %>
+		</div>
+	</main>
+
+<footer>
+		Amanda Grace Hua Copyright &copy; 2017
+	</footer>
+</body>
+</html>
