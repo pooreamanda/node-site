@@ -38,10 +38,29 @@ router.post('/contact', function(req, res) {
 	smtpTrans = nodemailer.createTransport({
       service: 'Gmail',
       auth: {
-          user: "me@gmail.com", //add this later
-          pass: "password" //add this later
+          user: "me@gmail.com", //fix this later
+          pass: "password" //fix this later
       	}
-  	});
+});      	
+
+// Maybe set up a custom OAuth2 handler
+// let transporter = nodemailer.createTransport({
+//     service: 'Gmail',
+//     auth: {
+//         type: 'OAuth2',
+//         user: 'user@example.com'
+//     }
+// });
+
+// transporter.set('oauth2_provision_cb', (user, renew, callback)=>{
+//     let accessToken = userTokens[user];
+//     if(!accessToken){
+//         return callback(new Error('Unknown user'));
+//     }else{
+//         return callback(null, accessToken);
+//     }
+// });
+ 
 	//Mail options
 	mailOpts = {
       from: req.body.name + ' &lt;' + req.body.email + '&gt;', //grab form data from the request body object
