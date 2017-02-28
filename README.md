@@ -14,3 +14,7 @@ to run perpetually nodemon server.js
 ## Acknowledgments
 
 * Tutorial: https://scotch.io/tutorials/react-on-the-server-for-beginners-build-a-universal-react-and-node-app
+
+* Cassie, awesome lady mentor!
+
+* Danny, long-suffering husband. 
