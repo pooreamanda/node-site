@@ -20,13 +20,13 @@ header .navbar {
 
 .hero.resume {background-image: url(../img/HIP.png)}
 
-.hero.contact {background-image: url(../img/DTH.png)}
+.hero.contact {background-image: url(../img/rainer.jpg)}
 
-.hero.videos {background-image: url(../img/library.png)}
+.hero.videos {background-image: url(../img/DTH.png)}
 
 .hero-content {
 	position: absolute;
-	top: 45%;
+	top: 35%;
 	text-align: center;
 	width: 100%;
 }

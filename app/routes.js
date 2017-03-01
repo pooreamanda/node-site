@@ -44,22 +44,23 @@ router.use(bodyParser.json());
 
 // route for post contact
 router.post('/contact', function(req, res) {
-var mailOpts, smtpTrans; 
-//transport
+var smtpTrans; 
+//transport - WORKING
 smtpTrans = nodemailer.createTransport({
   service: 'Gmail',
   auth: {
-      user: "<myUser>",
-      pass: "<myPassword>" 
+      user: "email",
+      pass: "pass" 
   }
 });
-//Mail options
-mailOpts = {
+//Mail options - NOT WORKING
+ var mailOpts = {
   from: req.query.name + ' &lt;' + req.query.email + '&gt;', //grab form data from the request body object
-  to: '<other user>',
-  subject: 'Website contact form',
+  to: 'email',
+  subject: 'Hello, Amanda!',
   text: req.query.message
   };
+//Error message - WORKING
   smtpTrans.sendMail(mailOpts, function (error, response) {
   //Email not sent
   var popup = require('window-popup');
@@ -70,7 +71,7 @@ mailOpts = {
   else {
       res.end("Email send successfully");
   }
-  }); 
+  });
   });
 
 
