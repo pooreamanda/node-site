@@ -19,9 +19,19 @@ router.get('/', function(req, res) {
 	res.render('pages/home');
 });
 
-// route for resume page
-router.get('/resume', function(req, res) {
-	res.render('pages/resume');
+// route for experience page
+router.get('/experience', function(req, res) {
+	res.render('pages/experience');
+});
+
+// route for skills page
+router.get('/skills', function(req, res) {
+  res.render('pages/skills');
+});
+
+// route for education page
+router.get('/education', function(req, res) {
+  res.render('pages/education');
 });
 
 // route for videos page

@@ -61,3 +61,27 @@ footer {
 	background: #222;
 	text-align: center;
 }
+
+.social-media {
+	display: inline-block;
+}
+
+.instagram-link {
+	background: url('../img/Instagram.png') no-repeat center center scroll;
+	background-size: 50px 50px;
+	margin: 5px 0px 15px 15px;
+	padding: 20px 30px 20px 30px;
+	border: none;
+}
+
+.twitter-link {
+	background: url('../img/Twitter.png') no-repeat center center scroll;
+	background-size: 50px 50px;
+	margin: 5px 0px 15px 15px;
+	padding: 20px 30px 20px 30px;
+	border: none;
+}
+
+.copyright {
+	padding-top: 20px;
+}
